@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ course.title }}
+{% endblock title %}
+
+{% block content %}
+<div>
+    <h1>{{ course.title }}</h1>
+    <h2 class="mb-5">{{ course.category }}</h2>
+
+    <p class="fw-bold">Price: 
+        <span class="fw-normal">{{ course.price }}</span>
+    </p>
+    <p class="fw-bold">Sdunets: 
+        <span class="fw-normal">{{ course.students_qty }}</span>
+    </p>
+    <p class="fw-bold">Reviews: 
+        <span class="fw-normal">{{ course.reviews_qty }}</span>
+    </p>
+
+    <button class="btn btn-primary">Buy</button>
+</div>
+{% endblock content %}
